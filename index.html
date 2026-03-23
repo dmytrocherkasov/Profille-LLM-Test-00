@@ -223,7 +223,7 @@
 
         .hero-grid {
             display: grid;
-            grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+            grid-template-columns: 1fr;
             gap: 2rem;
             align-items: center;
             min-height: calc(100vh - 84px);
@@ -272,47 +272,6 @@
         .hero-point span {
             color: var(--muted);
             font-size: 0.94rem;
-        }
-
-        .hero-card {
-            position: relative;
-            padding: 1.35rem;
-            border-radius: var(--radius-xl);
-            background: linear-gradient(180deg, rgba(17, 29, 49, 0.95) 0%, rgba(10, 18, 33, 0.95) 100%);
-            border: 1px solid rgba(115, 143, 194, 0.18);
-            box-shadow: var(--shadow);
-        }
-
-        .hero-card img {
-            width: 100%;
-            border-radius: 22px;
-            background: linear-gradient(180deg, rgba(255, 200, 87, 0.16), rgba(115, 224, 255, 0.12));
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            object-fit: contain;
-            min-height: 420px;
-            padding: 1.4rem;
-        }
-
-        .floating-card {
-            position: absolute;
-            right: -12px;
-            bottom: 28px;
-            width: min(290px, 90%);
-            padding: 1rem 1.1rem;
-            border-radius: 20px;
-            background: rgba(7, 13, 25, 0.82);
-            border: 1px solid rgba(115, 224, 255, 0.2);
-            box-shadow: 0 18px 40px rgba(7, 13, 25, 0.45);
-        }
-
-        .floating-card strong {
-            display: block;
-            margin-bottom: 0.35rem;
-        }
-
-        .floating-card p {
-            color: var(--muted);
-            font-size: 0.95rem;
         }
 
         .metrics {
@@ -636,12 +595,6 @@
                 min-height: auto;
             }
 
-            .hero-card {
-                max-width: min(640px, 100%);
-                width: 100%;
-                margin-inline: auto;
-            }
-
             .hero-copy h1 {
                 font-size: clamp(2.2rem, 6vw, 4.2rem);
             }
@@ -780,13 +733,6 @@
                     </div>
                 </div>
 
-                <div class="hero-card">
-                    <img src="Bender_Rodriguez.png" alt="Бендер Родригес приветствует гостей футуристического парка развлечений">
-                    <div class="floating-card">
-                        <strong>Главный принцип парка</strong>
-                        <p>Меньше скучных правил, больше ярких впечатлений, юмора и сценариев, которые хочется повторить.</p>
-                    </div>
-                </div>
             </div>
 
             <div class="container metrics" aria-label="Факты о парке">
